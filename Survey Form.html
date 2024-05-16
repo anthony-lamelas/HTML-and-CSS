@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+  <main>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <fieldset>
+    <form id="survey-form">
+      <h2>Name</h2>
+      <label id="name-label">Enter Your Name:
+        <p></p>
+        <input id="name" type="text" placeholder="Brian" required></label>
+        
+
+      <h2>Email</h2>
+      <label id="email-label">Enter Your Email:
+        <p></p>
+        <input id="email" type="email" placeholder="brian@gmail.com" required></label>
+
+      <h2>Age</h2>
+      <label id="number-label">Enter Your Age (Optional):
+        <p></p>
+        <input id="number" type="number" min="0" max="100" placeholder="19"></label>
+
+     
+      <h2>What Was Your First Course?</h2>
+      <label id="firstcourse-lable">Select Your First Course
+        <select id="dropdown">
+          <option value="HTML/CSS">HTML/CSS</option>
+          <option value="Javascript">Javascript</option>
+          <option value="Python">Python</option>
+          <option value="Other">Other</option>
+        </select>
+      </label>
+
+      <h2>How Did You Find Us?</h2>
+      <label><input id="referral" type="radio" name="referred" value="friend">Friend</label>
+      <label><input id="referral" type="radio" name="referred" value="teacher">Teacher</label>
+      <label><input id="referral" type="radio" name="referred" value="online">Online</label>
+      <label><input id="referral" type="radio" name="referred" value="email">Email</label>
+      <label><input id="referral" type="radio" name="referred" value="other">Other</label>
+
+  <h2>What Would You Like Us to Improve Most?</h2>
+  <label><input id="improve" type="checkbox" value="projects" name="improvements">Projects</label>
+  <p></p>
+  <label><input id="improve" type="checkbox" value="Courses" name="improvements">Courses</label>
+
+<h2>Comments</h2>
+<label for="comments">Enter Any Additonal Comments:
+  <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+<p></p>
+  <button id="submit" type="submit">Submit</button>
+
+
+      </fieldset>
+    </form>
+  </main>
+
+</body>
+</html>
