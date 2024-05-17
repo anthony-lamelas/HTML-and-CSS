@@ -1,0 +1,44 @@
+h1,h2{
+  text-align:center;
+}
+
+main{
+  margin-left:200px;
+  padding:20px;
+  font-family: "Brush Script Mt", cursive;
+}
+
+#navbar{
+  position: fixed; /* Fixed position */
+            top: 0; /* Position at the top of the window */
+            left: 0; /* Position at the left edge of the window */
+            width: 110px; /* Width of the navigation bar */
+            height: 100vh; /* Full height of the viewport */
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+}
+
+.nav-link{
+  color:blue;
+}
+
+.tabbed{
+  padding-left:30px;
+  margin-top:7px;
+}
+
+ @media (max-width: 600px) {
+            p {
+                font-size: 14px;
+                color: black;
+            }
+        }
+
+        /* Media query for screens with a minimum width of 1200px */
+        @media (min-width: 1200px) {
+            p {
+                font-size: 18px;
+                color: black;
+            }
+        }
