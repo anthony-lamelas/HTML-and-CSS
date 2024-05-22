@@ -1,0 +1,151 @@
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color:grey;
+}
+
+h1, h2, h3, p, #form {
+    text-align: center;
+    
+}
+
+h2, h3, p{
+    color:white;
+}
+
+h1{
+    color:#383838;
+    font-weight:bold;
+}
+
+#prices{
+    color:yellow;
+}
+
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px; 
+}
+
+#welcome{
+    margin-top:-175px;
+}
+
+#header-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#header-img {
+    max-width: 100%;
+    height: auto;
+    margin-top:-200px;
+}
+
+#video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #FF4433;
+    z-index: 1000; 
+}
+
+#nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.navigation {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    background-color: #111;
+}
+
+
+@media (max-width: 768px) {
+    #nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .navigation li {
+        margin: 10px 0;
+    }
+
+    #header-img {
+        width: 300px;
+        height: auto;
+    }
+
+    #video {
+        width: 100%;
+        height: auto;
+    }
+
+    #video-container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #header-img {
+        width: 200px;
+        height: auto;
+    }
+
+    #video {
+        width: 100%;
+        height: auto;
+    }
+
+    #video-container {
+        padding: 5px;
+    }
+
+    .navigation li a {
+        padding: 10px;
+    }
+}

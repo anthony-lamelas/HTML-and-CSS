@@ -1,66 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head id="header">
-<meta charset="UTF-8">
-<title>Premium Pianos</title>
-<link rel="stylesheet" href="style.css">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Premium Pianos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-  <header id="header">
-    <img id="header-img" src="https://static.vecteezy.com/system/resources/thumbnails/009/103/605/small/piano-icon-illustration-logo-template-vector.jpg" width="400" height="400">
 
-  <nav id="nav-bar">
-      
-      <a href="#why-us" class="nav-link">Features</a><br>
-      <a href="#video" class="nav-link">How it Works</a><br>
-      <a href="#pricing" class="nav-link">Pricing</a><br>
-  </nav>
-
+<body>
+    <header id="header">
+        <div id="header-img-container">
+            <img id="header-img" src="https://static.vecteezy.com/system/resources/thumbnails/009/103/605/small/piano-icon-illustration-logo-template-vector.jpg" width="600" height="500">
+        </div>
+        <nav id="nav-bar">
+            <ul class="navigation">
+                <li><a href="#why-us" class="nav-link">Features</a></li>
+                <li><a href="#video" class="nav-link">How it Works</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+            </ul>
+        </nav>
+        <h1 id="welcome">Welcome to Premium Pianos!</h1>
     </header>
 
+    <main id="main">
+        <div id="video-container">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/tEtukfFv3Wk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p></p>
 
-<main>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <h3>Subscribe to our Newsletter!</h3>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <input id="submit" type="submit">
+        </form>
 
-<video id="video" controls>
-  <source src="https://youtu.be/tEtukfFv3Wk?si=2AH8W_ZgHSCLIO4a" type="video/webm">
-  <button onclick="playPauseVideo()">Play/Pause</button>
-</video>
-<p></p>
+        <u><h1 id="why-us">Why Us?</h1></u>
+        <h2>Worldwide Shipping</h2>
+        <p>We have a network that spans across the entire planet.</p>
+        <h2>Custom Installment</h2>
+        <p>Our experts are always readily available.</p>
+        <h2>Premier Quality</h2>
+        <p>Our pianos are the greatest in the world and have been reviewed by experts such as Beethoven</p>
+        <br>
 
-<form id="form" action="https://www.freecodecamp.com/email-submit">
-
-  <h3>Subscribe to our Newsletter!</h3>
-  
-  <input type="email" name="email" id="email" placeholder="Enter your email"></input>
-  <input id="submit" type="submit">
-  
-  </input>
-</form>
-
-
-<h1 id="why-us">Why Us?</h1>
-<h2>Worldwide Shipping</h2>
-<p>We have a network that spans across the entire planet.</p>
-<h2>Custom Installment</h2>
-<p>Our experts are always readily available.</p>
-<h2>Premier Quality</h2>
-<p>Our pianos are the greatest in the world and have been reviewed by experts such as Beethoven</p>
-<br>
-
-
-
-
-<h1 id="pricing">Pricing</h1>
-<h2>Grand Piano</h2>
-<p>This is the standard piano. It will suit all of your piano needs and is made to last for years.</p>
-<h2>Gold Piano</h2>
-<p>This is the upgraded version of the Grand Piano and is made of complete gold, making the acousitcs absolutely exquisite.</p>
-<h2>Diamond Piano</h2>
-<p>This is the greatest piano in the world. Whenever a key is pressed, the heavens can be heard.</p>
-
-
-
-
-  </main>
-
-
+        <u><h1 id="pricing">Pricing</h1></u>
+        <h2>Grand Piano</h2>
+        <h3 id="prices">$3000</h3>
+        <p>This is the standard piano. It will suit all of your piano needs and is made to last for years.</p>
+        <h2>Gold Piano</h2>
+        <h3 id="prices">$8000</h3>
+        <p>This is the upgraded version of the Grand Piano and is made of complete gold, making the acoustics absolutely exquisite.</p>
+        <h2>Diamond Piano</h2>
+        <h3 id="prices">$100000</h3>
+        <p>This is the greatest piano in the world. Whenever a key is pressed, the heavens can be heard.</p>
+    </main>
+</body>
 </html>
