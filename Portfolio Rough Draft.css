@@ -1,34 +1,41 @@
-/* New h1 styles */
-h1 {
-    font-size: 3em; /* Adjust the font size as needed */
-    text-align: center; /* Center the text */
-    margin-top: 75px; /* Add margin on top to separate from the navigation */
-}
-
-/* Existing h1 styles */
-section h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f2f5;
+    color: #333;
 }
 
 
+header {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 2px solid #189ad3;
+}
 
-/* Navigation styles */
+header h1 {
+    font-size: 3.5em;
+    color: #189ad3;
+    margin: 0;
+}
+
+
 nav {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     background-color: #189ad3;
-    z-index: 1000; 
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    padding: 10px 0;
 }
 
 .navigation {
@@ -39,42 +46,88 @@ nav {
 }
 
 .navigation li {
-    margin: 0;
-    padding: 0;
+    margin: 0 15px;
 }
 
 .navigation li a {
-    display: block;
     color: white;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
 }
 
 .navigation li a:hover {
-    background-color: #111;
+    background-color: #006494;
 }
 
-/* Section styles */
+
 section {
-    padding: 60px 20px; 
-
-    margin-top: 60px;  
-    
+    padding: 100px 20px;
+    margin-top: 60px;
 }
 
-/* Specific section styles */
 #about-me, #projects, #contact-me {
+    background-color: #ffffff;
     padding: 60px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Heading styles */
-h1 {
-    font-size: 2em;
+
+section h2, section h1 {
+    font-size: 2.5em;
     margin-bottom: 20px;
+    color: #333;
+    text-align: center;
 }
 
-/* Responsive styles */
+.project-tile {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #189ad3;
+    text-align: center;
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.role-list {
+    margin: 20px 0;
+    padding: 0;
+    list-style: disc inside;
+}
+
+.role-list li {
+    margin-bottom: 10px;
+}
+
+
+.link-text a {
+    color: #189ad3;
+    text-decoration: underline;
+}
+
+#contact-me a {
+    display: block;
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #189ad3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact-me a:hover {
+    color: #006494;
+}
+
+
 @media (max-width: 768px) {
     #navbar {
         flex-direction: column;
@@ -88,4 +141,16 @@ h1 {
     .navigation li {
         margin: 10px 0;
     }
+
+    section {
+        padding: 80px 20px;
+    }
+}
+
+.link-text {
+    font-weight: bold;
+}
+
+#contact-title {
+    text-decoration: underline;
 }
